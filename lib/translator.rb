@@ -14,10 +14,13 @@ def load_library(path)
   result
 end
 
-def get_japanese_emoticon(file_path = './lib/emoticons.yml', emoticon)
+def get_japanese_emoticon(file_path = './lib/emoticons.yml', eng_emoticon)
   # code goes here
   
-  load_library(file_path = './lib/emoticons.yml')
+  library = load_library(file_path = './lib/emoticons.yml')
+  if library["get_emoticon"].include?(eng_emoticon)
+    library["get_emoticon"][eng_emoticon]
+  end
 end
 
 def get_english_meaning

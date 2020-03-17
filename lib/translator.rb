@@ -9,7 +9,7 @@ def load_library(path)
   
   result.each do |meaning, emoticons|
     result["get_meaning"][emoticons[1]] = meaning
-    result["get_emoticon"][emoticons[0]] = emoticons
+    result["get_emoticon"][emoticons[0]] = emoticons[1]
   end
 end
 

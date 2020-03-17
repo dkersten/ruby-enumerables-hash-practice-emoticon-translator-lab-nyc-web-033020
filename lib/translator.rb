@@ -20,6 +20,8 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', eng_emoticon)
   library = load_library(file_path = './lib/emoticons.yml')
   if library["get_emoticon"].include?(eng_emoticon)
     library["get_emoticon"][eng_emoticon]
+  else
+    "Sorry, that emoticon was not found"
   end
 end
 

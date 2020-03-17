@@ -6,7 +6,7 @@ def load_library(path)
   library = YAML.load_file(path)
   
   results = {"get_meaning" => {}, "get_emoticon" => {}}
-  results["get_meaning"][emoticons][1] = meaning
+  result["get_meaning"][emoticons[1]] = meaning
 end
 
 def get_japanese_emoticon

@@ -1,8 +1,8 @@
 # require modules here
 require 'yaml'
 
-path = "./lib/emoticons.yml"
-def load_library(path)
+emoticons = "./lib/emoticons.yml"
+def load_library(emoticons)
   # code goes here
   puts path
 end
